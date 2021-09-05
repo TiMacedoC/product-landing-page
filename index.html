@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modals-style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Awesome Product</h1>
+        <h2>Dat product subline is so nice it blows your mind.</h2>
+        <button onclick="openBuyingModal()">Order yours now!</button>
+    </header>
+
+    <section class="product-description">
+        <div class="container">
+            <img style="width: 200px;" src="assets/product-picture.jpg" alt="product image">
+            <div class="product-details">
+                <h2>Product is so awesome.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt totam aspernatur hic fugit corporis
+                    saepe
+                    laboriosam eum modi soluta magnam, tenetur asperiores autem adipisci mollitia dignissimos
+                    consequuntur
+                    accusamus recusandae!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div>
+            <img src="assets/flash_on_white_36dp.svg" alt="bolt image">
+            <p>Product so awesome. Makes you awesome - go buy!</p>
+        </div>
+
+        <div class="midle-div">
+            <img src="assets/savings_white_36dp.svg" alt="saving money">
+            <p>Product so great. Makes you even greater - go buy now. Super cheap deal!</p>
+        </div>
+
+        <div>
+            <img src="assets/favorite_white_36dp.svg" alt="saving money">
+            <p>Feel lonely? Go buy product and have a friend!</p>
+        </div>
+    </section>
+
+    <section class="more-about">
+        <h3>Take Product with you everywhere you go.</h3>
+        <p>Product is all you need. Anywhere - ever. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            sapiente hic voluptatum quo sunt totam accusamus distinctio minus aliquid quis!</p>
+    </section>
+
+    <section class="testimonial-field">
+        <blockquote class="testimonial">
+            <p>Love product. So nice! So good! Could not live without!</p>
+            <cite>
+                – Satisfied Customer
+            </cite>
+        </blockquote>
+    </section>
+
+    <section class="why-to-buy">
+        <h3>Reasons to buy this product:</h3>
+        <div class="lists">
+            <ul>
+                <li>Its the best</li>
+                <li>Its awesome</li>
+                <li>It makes you happy</li>
+                <li>It brings world peace</li>
+                <li>Its free!</li>
+            </ul>
+            <ul>
+                <li>Its the best</li>
+                <li>Its awesome</li>
+                <li>It makes you happy</li>
+                <li>It brings world peace</li>
+                <li>Its free!</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="end-page">
+        <h2>Why you still reading?</h2>
+        <button onclick="openBuyingModal()">Order yours now!</button>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a class="links"
+                        href="https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Product-Landing-Page.md"
+                        target="_blank">Source</a></li>
+
+                <li><a class="links" href="#" onclick="openContactModal()">Contact us</a></li>
+                <li><a class="links" href="#">Home</a></li>
+            </ul>
+            <p class="rights">&copy; 2021 dat Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- BUYING MODAL -->
+
+    <section class="modal-wrapper">
+
+        <div class="modal">
+
+            <div class="logo-field">
+                <img src="assets/blue-check.png" alt="blue check">
+            </div>
+
+            <h2>THANK YOU!</h2>
+            <p>You just made your life better.</p>
+            <button onclick="closeBuyingModal()">Ok</button>
+        </div>
+
+    </section>
+
+    <!-- CONTACT MODAL -->
+
+    <section class="modal-wrapper contact" id="">
+
+        <div class="contact-modal">
+            <img onclick="closeContactModal()" class="close-button" src="assets/close.svg" alt="close button">
+
+            <div class="image-field">
+                <img src="assets/perfil-600-600.jpg" alt="profile" class="profile-picture">
+            </div>
+
+            <div class="contact-field">
+
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/timacedoc/" target="_blank">
+                            <img class="logo-image" src="assets/linkedin-cinza.png" alt="linkedin logo">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/TiMacedoC" target="_blank">
+                            <img class="logo-image" src="assets/github-cinza.png" alt="github logo">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.twitter.com/timacedoc/" target="_blank">
+                            <img class="logo-image" src="assets/twitter-cinza.png" alt="twitter logo">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/timacedoc/" target="_blank">
+                            <img class="logo-image" src="assets/instagram-cinza.png" alt="instagram logo">
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
