@@ -4,6 +4,8 @@
 #active {
     visibility: visible;
     opacity: 1;
+
+    transform: scale(1);
 }
 
 .modal-wrapper{
@@ -24,6 +26,10 @@
     /* -------SUMIR UM ELEMENTO DA TELA------- */
     visibility: hidden;
     opacity: 0;
+    transform: scale(1.15);
+
+    
+    transition: .4s;
 
 }
 
