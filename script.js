@@ -11,7 +11,8 @@ function closeBuyingModal() {
 
 };
 
-function openContactModal() {
+function openContactModal(event) {
+    event.preventDefault();
     document.querySelector(".contact").id = "active";
 };
 
