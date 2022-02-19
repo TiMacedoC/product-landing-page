@@ -1,14 +1,9 @@
 function openBuyingModal() {
-
     document.querySelector(".modal-wrapper").id = "active";
-
 };
 
-
 function closeBuyingModal() {
-
     document.querySelector(".modal-wrapper").id = "";
-
 };
 
 function openContactModal(event) {
@@ -23,7 +18,6 @@ function closeContactModal() {
 
 // Fechar modal com ESC
 window.addEventListener('keydown', (e) => {
-
     if (e.code == "Escape") {
         closeBuyingModal();
         closeContactModal();
@@ -32,7 +26,6 @@ window.addEventListener('keydown', (e) => {
 
 //Fechar modal clicando fora
 window.onclick = function (event) {
-
     if (event.target.id == "active") {
         closeBuyingModal();
         closeContactModal();
